@@ -7,3 +7,9 @@ This plugin is mainly for water dog users and only lets players join with the ip
 German
 
 Dieses plugin ist hauptsächlich für water dog benutzer und lässt die spieler nur mit der ip 127.0.0.1 joinen
+
+[![](https://poggit.pmmp.io/shield.state/OnlyProxyJoin)](https://poggit.pmmp.io/p/OnlyProxyJoin)
+<a href="https://poggit.pmmp.io/p/OnlyProxyJoin"><img src="https://poggit.pmmp.io/shield.state/OnlyProxyJoin"></a>
+
+[![](https://poggit.pmmp.io/shield.api/OnlyProxyJoin)](https://poggit.pmmp.io/p/OnlyProxyJoin)
+<a href="https://poggit.pmmp.io/p/OnlyProxyJoin"><img src="https://poggit.pmmp.io/shield.api/OnlyProxyJoin"></a>
