@@ -1,0 +1,5 @@
+name: OnlyProxyJoin
+author: WolfcodeZ
+version: 1
+main: OnlyProxyJoin\Main
+api: 3.0.0
