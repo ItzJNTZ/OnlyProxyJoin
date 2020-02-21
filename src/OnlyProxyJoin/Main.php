@@ -1,6 +1,6 @@
 <?php
 
-namespace proxy;
+namespace OnlyProxyJoin;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
