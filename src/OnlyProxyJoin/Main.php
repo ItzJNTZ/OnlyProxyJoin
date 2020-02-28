@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerHungerChangeEvent;
 use pocketmine\event\player\PlayerLoginEvent;
 
-class OnlyProxyJoin extends PluginBase implements Listener {
+class Main extends PluginBase implements Listener {
 
   public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -24,7 +24,9 @@ class OnlyProxyJoin extends PluginBase implements Listener {
       if($player->getAddress() != "127.0.0.1") {
         $player->kick("§cPlease enter the server via the proxy");
       }
-
+        if($player->getAddress() != "0.0.0.1") {
+            $player->kick("§cPlease enter the server via the proxy");
+        }
     }
 
 }
