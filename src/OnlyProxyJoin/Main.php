@@ -2,10 +2,10 @@
 
 namespace OnlyProxyJoin;
 
+use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerHungerChangeEvent;
-use pocketmine\event\player\PlayerLoginEvent;
 
 class Main extends PluginBase implements Listener {
 
@@ -18,13 +18,18 @@ class Main extends PluginBase implements Listener {
         $this->getLogger()->info("disabled");
     }
 
-    public function onLogin(PlayerLoginEvent $event) {
+    public function onJoin(PlayerJoinEvent $event) {
       $player = $event->getPlayer();
       $name = $player->getName();
-      if($player->getAddress() != "127.0.0.1") {
-        $player->kick("§cPlease enter the server via the proxy");
+      $ip = $player->getAddress();
+      if($player->getAddress() === "127.0.0.1") {
+          $this->getLogger()->info("Der spieler $name ist erfolgreich gejoint mit der ip: $ip");
+      } else {
+          $player->kick("§cPlease enter the server via the proxy");
       }
         if($player->getAddress() != "0.0.0.1") {
+            $this->getLogger()->info("Der spieler $name ist erfolgreich gejoint mit der ip: $ip");
+        } else {
             $player->kick("§cPlease enter the server via the proxy");
         }
     }
