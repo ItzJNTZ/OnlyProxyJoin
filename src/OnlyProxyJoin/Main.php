@@ -22,16 +22,11 @@ class Main extends PluginBase implements Listener {
       $player = $event->getPlayer();
       $name = $player->getName();
       $ip = $player->getAddress();
-      if($player->getAddress() === "127.0.0.1") {
+      if($player->getAddress() === "194.93.56.11") {
           $this->getLogger()->info("Der spieler $name ist erfolgreich gejoint mit der ip: $ip");
       } else {
           $player->kick("§cPlease enter the server via the proxy");
       }
-        if($player->getAddress() != "0.0.0.1") {
-            $this->getLogger()->info("Der spieler $name ist erfolgreich gejoint mit der ip: $ip");
-        } else {
-            $player->kick("§cPlease enter the server via the proxy");
-        }
     }
 
 }
