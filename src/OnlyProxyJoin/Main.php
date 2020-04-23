@@ -23,9 +23,9 @@ class Main extends PluginBase implements Listener {
       $name = $player->getName();
       $ip = $player->getAddress();
       if($player->getAddress() === "172.18.0.1") {
-          $this->getLogger()->info("Der spieler $name ist erfolgreich gejoint mit der ip: $ip");
+          $this->getLogger()->info("The player $name has joined successfully with the ip: $ip");
       } else {
-          $player->kick("§cPlease enter the server via the proxy");
+          $player->kick("§cPlease enter the server via IP: play.infinitype.net & Port:19132");
       }
     }
 
